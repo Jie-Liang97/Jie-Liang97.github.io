@@ -5,52 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dr Jie Liang - Online Tutoring Services</title>
 
-    <!-- Standard Favicon -->
+    <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-
-    <!-- Apple Touch Icon (iOS Home Screen) -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
-
-    <!-- Android/Chrome -->
     <link rel="manifest" href="assets/favicons/site.webmanifest">
-
-    <!-- Fallback for Older Browsers -->
-    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
-
-    <!-- Windows Tile (for Windows 8/10) -->
     <meta name="msapplication-TileColor" content="#FF7A5A">
-
-    <!-- Theme Color for Mobile Browsers -->
     <meta name="theme-color" content="#FF7A5A">
 
-    <!-- Tailwind CSS CDN -->
+    <!-- Tailwind & Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Font: Inter -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-
-        /* Modal fade-in animation */
-        .modal-fade {
-            transition: opacity 0.3s ease;
-        }
-        .modal-wrapper {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.35s ease;
-        }
-        .modal-open .modal-wrapper {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        body { font-family: 'Inter', sans-serif; }
+        .modal-fade { transition: opacity 0.3s ease; }
+        .modal-wrapper { opacity:0; transform:translateY(30px); transition: all 0.35s ease; }
+        .modal-open .modal-wrapper { opacity:1; transform:translateY(0); }
     </style>
 
     <script>
@@ -58,26 +30,21 @@
             theme: {
                 extend: {
                     colors: {
-                        'brand-orange': '#FF7A5A',
-                        'brand-orange-light': '#FFF0ED',
-                        'brand-dark': '#2D3142',
-                    },
-                },
-            },
+                        'brand-orange':'#FF7A5A',
+                        'brand-orange-light':'#FFF0ED',
+                        'brand-dark':'#2D3142'
+                    }
+                }
+            }
         };
     </script>
 </head>
 <body class="bg-white text-brand-dark">
 
-    <!-- Header / Navigation -->
+    <!-- Header -->
     <header class="bg-white sticky top-0 z-50 shadow-sm">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <!-- Logo -->
-            <a href="#" class="text-2xl font-bold text-brand-dark">
-                Jie Liang <span class="text-brand-orange">PhD</span>
-            </a>
-
-            <!-- Navigation Links -->
+            <a href="#" class="text-2xl font-bold text-brand-dark">Jie Liang <span class="text-brand-orange">PhD</span></a>
             <ul class="hidden md:flex items-center space-x-8 font-medium">
                 <li><a href="#" class="text-brand-orange">Home</a></li>
                 <li><a href="#" class="hover:text-brand-orange transition-colors">Class</a></li>
@@ -85,137 +52,106 @@
                 <li><a href="#" class="hover:text-brand-orange transition-colors">Online Class</a></li>
                 <li><a href="#" class="hover:text-brand-orange transition-colors">Contact</a></li>
             </ul>
-
-            <!-- Header Button -->
-            <div class="flex items-center space-x-4">
-                <a href="javascript:void(0);" onclick="openBookingModal()" class="bg-brand-orange text-white px-5 py-2 rounded-lg font-medium hover:bg-opacity-90 transition-all">
-                    Book Now
-                </a>
-            </div>
+            <a href="javascript:void(0);" onclick="openBookingModal()" class="bg-brand-orange text-white px-5 py-2 rounded-lg font-medium hover:bg-opacity-90 transition-all">Book Now</a>
         </nav>
     </header>
 
-    <!-- Main Content -->
     <main>
 
-        <!-- Hero Section -->
-        <section class="container mx-auto px-6 py-16 md:py-24">
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <!-- Hero Text Content -->
-                <div class="md:w-1/2 text-center md:text-left">
-                    <h1 class="text-4xl lg:text-5xl font-extrabold leading-tight mb-6">
-                        Get started with your <br> online <span class="text-brand-orange">Lesson</span>
-                    </h1>
-                    <p class="text-lg text-gray-600 mb-8">
-                        Get study and keep your spirit to get success in the future. I am here to help you to get your dream.
-                    </p>
-                    <a href="javascript:void(0);" onclick="openBookingModal()" class="bg-brand-orange text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-opacity-90 transition-all shadow-lg shadow-brand-orange/30">
-                        Book Now
-                    </a>
-                </div>
-
-                <!-- Hero Image -->
-                <div class="md:w-3/5 relative">
-                    <img 
-                        src="assets/images/main picture.jpg" 
-                        width="600px"
-                        alt="An educator holding a tablet and smiling" 
-                        class="rounded-lg "
-                        onerror="this.src='https://placehold.co/500x600/FFF0ED/333?text=Image+Not+Found'">
-                </div>
+        <!-- Hero -->
+        <section class="container mx-auto px-6 py-16 md:py-24 flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl lg:text-5xl font-extrabold leading-tight mb-6">
+                    Get started with your <br> online <span class="text-brand-orange">Lesson</span>
+                </h1>
+                <p class="text-lg text-gray-600 mb-8">
+                    Start your learning journey today and gain confidence with tailored support.
+                </p>
+                <a href="javascript:void(0);" onclick="openBookingModal()" class="bg-brand-orange text-white px-8 py-3 rounded-lg font-semibold text-lg hover:bg-opacity-90 shadow-lg shadow-brand-orange/30">
+                    Book Now
+                </a>
+            </div>
+            <div class="md:w-3/5 relative grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Main Hero Image -->
+                <img src="https://placehold.co/600x600/FFF0ED/333?text=Hero+Image+1" alt="Hero Image 1" class="rounded-lg w-full">
+                <!-- Additional Hero Images -->
+                <img src="https://placehold.co/600x600/FFE4D6/333?text=Hero+Image+2" alt="Hero Image 2" class="rounded-lg w-full">
+                <img src="https://placehold.co/600x600/FFD6C6/333?text=Hero+Image+3" alt="Hero Image 3" class="rounded-lg w-full">
+                <img src="https://placehold.co/600x600/FFF0ED/333?text=Hero+Image+4" alt="Hero Image 4" class="rounded-lg w-full">
             </div>
         </section>
 
-        <!-- Services Section -->
+        <!-- Services -->
         <section class="bg-gray-50 py-24">
             <div class="container mx-auto px-6">
                 <h2 class="text-3xl font-bold text-center mb-16">Services</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Card 1 -->
                     <div class="bg-white p-8 rounded-2xl shadow-lg shadow-gray-100">
-                        <div class="relative z-10">
-                            <div class="bg-orange-100 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                                <i data-lucide="book-open" class="w-8 h-8 text-brand-orange"></i>
-                            </div>
-                            <h3 class="text-2xl font-bold mb-3">Personalised Learning Support</h3>
-                            <p class="mb-6">Tailored one-on-one tutoring to help you understand deeply and improve steadily.</p>
+                        <div class="bg-orange-100 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                            <i data-lucide="book-open" class="w-8 h-8 text-brand-orange"></i>
                         </div>
-                        <div class="absolute -bottom-8 -right-8 w-32 h-32 bg-white/20 rounded-full"></div>
+                        <h3 class="text-2xl font-bold mb-3">Personalised Learning</h3>
+                        <p>Tailored tutoring to deepen understanding and improve steadily.</p>
                     </div>
-                    <!-- Card 2 -->
                     <div class="bg-white p-8 rounded-2xl shadow-lg shadow-gray-100">
                         <div class="bg-orange-100 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
                             <i data-lucide="clipboard-list" class="w-8 h-8 text-brand-orange"></i>
                         </div>
-                        <h3 class="text-2xl font-bold text-brand-dark mb-3">Assignment Support</h3>
-                        <p class="text-gray-600 mb-6">Clear guidance and problem-solving strategies to make homework easier and stress-free.</p>
+                        <h3 class="text-2xl font-bold mb-3">Assignment Support</h3>
+                        <p>Guidance and strategies to make homework easier and stress-free.</p>
                     </div>
-                    <!-- Card 3 -->
                     <div class="bg-white p-8 rounded-2xl shadow-lg shadow-gray-100">
                         <div class="bg-purple-100 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
                             <i data-lucide="file-check" class="w-8 h-8 text-purple-600"></i>
                         </div>
-                        <h3 class="text-2xl font-bold text-brand-dark mb-3">Exam Preparation</h3>
-                        <p class="text-gray-600 mb-6">Boost confidence with structured revision, practice, and proven test-taking techniques.</p>
+                        <h3 class="text-2xl font-bold mb-3">Exam Preparation</h3>
+                        <p>Structured revision, practice, and proven test-taking techniques.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Features Section -->
+        <!-- Features -->
         <section class="bg-gray-50 py-24">
-            <div class="container mx-auto px-6">
-                <div class="flex flex-col md:flex-row items-center gap-12">
-                    <div class="md:w-1/2">
-                        <h2 class="text-3xl font-bold mb-8">How Online Tutoring Works</h2>
-                        <ul class="space-y-5 mb-8">
-                            <li class="flex items-center gap-3">
-                                <div class="bg-green-100 p-1.5 rounded-full">
-                                    <div class="text-green-600 w-5 h-5 rounded-full flex justify-center items-center">1</div>
-                                </div>
-                                <span class="text-lg font-medium">Secure Your Booking</span>
-                            </li>
-                            <li class="flex items-center gap-3">
-                                <div class="bg-green-100 p-1.5 rounded-full">
-                                    <div class="text-green-600 w-5 h-5 rounded-full flex justify-center items-center">2</div>
-                                </div>
-                                <span class="text-lg font-medium">Install Zoom & Prepare</span>
-                            </li>
-                            <li class="flex items-center gap-3">
-                                <div class="bg-green-100 p-1.5 rounded-full">
-                                    <div class="text-green-600 w-5 h-5 rounded-full flex justify-center items-center">3</div>
-                                </div>
-                                <span class="text-lg font-medium">Join Online & Start Learning</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="md:w-1/2 relative">
-                        <img 
-                            src="assets/images/student1.png" 
-                            alt="A student smiling and holding a tablet" 
-                            class="rounded-2xl w-full"
-                            onerror="this.src='https://placehold.co/550x500/E8F0F7/333?text=Image+Not+Found'">
-                        <form class="absolute -bottom-10 right-4 sm:right-10 bg-white p-6 rounded-2xl shadow-xl w-64">
-                            <div class="space-y-3">
-                                <a href="javascript:void(0);" onclick="openBookingModal()" class="flex justify-center bg-brand-orange text-white py-2 rounded-lg font-semibold hover:bg-opacity-90">
-                                    Book Now
-                                </a>
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-8">How Online Tutoring Works</h2>
+                    <ul class="space-y-5 mb-8">
+                        <li class="flex items-center gap-3">
+                            <div class="bg-green-100 p-1.5 rounded-full">
+                                <div class="text-green-600 w-5 h-5 rounded-full flex justify-center items-center">1</div>
                             </div>
-                        </form>
-                    </div>
+                            <span class="text-lg font-medium">Secure Your Booking</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="bg-green-100 p-1.5 rounded-full">
+                                <div class="text-green-600 w-5 h-5 rounded-full flex justify-center items-center">2</div>
+                            </div>
+                            <span class="text-lg font-medium">Install Zoom & Prepare</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <div class="bg-green-100 p-1.5 rounded-full">
+                                <div class="text-green-600 w-5 h-5 rounded-full flex justify-center items-center">3</div>
+                            </div>
+                            <span class="text-lg font-medium">Join Online & Start Learning</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2 grid grid-cols-2 gap-4">
+                    <!-- Feature Image Placeholders -->
+                    <img src="https://placehold.co/550x500/E8F0F7/333?text=Feature+Image+1" alt="Feature Image 1" class="rounded-2xl w-full">
+                    <img src="https://placehold.co/550x500/FFF0ED/333?text=Feature+Image+2" alt="Feature Image 2" class="rounded-2xl w-full">
+                    <img src="https://placehold.co/550x500/E8F0F7/333?text=Feature+Image+3" alt="Feature Image 3" class="rounded-2xl w-full">
+                    <img src="https://placehold.co/550x500/FFF0ED/333?text=Feature+Image+4" alt="Feature Image 4" class="rounded-2xl w-full">
                 </div>
             </div>
         </section>
 
-        <!-- Testimonial Section -->
+        <!-- Testimonials -->
         <section class="container mx-auto px-6 py-24">
             <div class="flex flex-col md:flex-row items-center gap-12">
                 <div class="md:w-1/3 relative">
-                    <img 
-                        src="assets/images/T1.jpg" 
-                        alt="A happy customer, Mr. Mboot Cxr" 
-                        class="rounded-2xl w-full"
-                        onerror="this.src='https://placehold.co/400x450/E0E7FF/333?text=Image+Not+Found'">
+                    <img src="assets/images/testimonial-1.jpg" alt="Happy student" class="rounded-2xl w-full" onerror="this.src='https://placehold.co/400x450/E0E7FF/333?text=Testimonial+Image'">
                     <div class="absolute -bottom-6 -right-6 bg-white px-4 py-3 rounded-lg shadow-lg">
                         <div class="font-bold text-lg">Amazing Service</div>
                         <div class="flex text-yellow-400">
@@ -228,16 +164,12 @@
                     </div>
                 </div>
                 <div class="md:w-2/3">
-                    <h2 class="text-3xl font-bold mb-6">My students say</h2>
+                    <h2 class="text-3xl font-bold mb-6">Review</h2>
                     <blockquote class="text-xl lg:text-2xl text-gray-700 italic leading-relaxed mb-6">
-                        "Jie has been a fantastic help to my son, who is doing Ext 2 maths for the HSC this year. Jie has helped immensely by explaining concepts clearly and identifying content areas that need more coverage. Thank you, Jie, for boosting my son's confidence for the challenges of HSC exams"
+                        "Jie has been a fantastic help to my son…"
                     </blockquote>
                     <div class="flex items-center gap-4">
-                        <img 
-                            src="https://placehold.co/60x60/FF7A5A/FFF?text=M" 
-                            alt="Simone B." 
-                            class="w-16 h-16 rounded-full"
-                            onerror="this.src='https://placehold.co/60x60/FF7A5A/FFF?text=M'">
+                        <img src="https://placehold.co/60x60/FF7A5A/FFF?text=M" alt="Student" class="w-16 h-16 rounded-full">
                         <div>
                             <div class="font-bold text-lg">Simone B.</div>
                             <div class="text-gray-600">Student</div>
@@ -251,54 +183,41 @@
 
     <!-- Footer -->
     <footer class="bg-brand-dark text-gray-300 pb-8">
-        <div class="container mx-auto px-6 ">
+        <div class="container mx-auto px-6">
             <div class="pt-6 border-gray-700 flex flex-col sm:flex-row justify-between items-center text-sm">
                 <p class="text-gray-500 mb-4 sm:mb-0">&copy; 2025 Jie Liang. All rights reserved.</p>
                 <div class="flex space-x-5">
-                    <a href="https://researchers.adelaide.edu.au/profile/jie.liang02" class="text-gray-500 hover:text-brand-orange"><i data-lucide="university"></i></a>
+                    <a href="https://researchers.adelaide.edu.au/profile/jie.liang02" class="text-gray-500 hover:text-brand-orange">
+                        <i data-lucide="university"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
 
-<!-- Booking Modal -->
-<div id="bookingModal" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden z-50 overflow-auto">
-    <div class="modal-wrapper bg-white rounded-xl w-11/12 max-w-4xl h-[90vh] relative mx-auto my-10 flex flex-col">
-        
-        <!-- Close Button -->
-        <button onclick="closeBookingModal()" 
-        class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold z-50">&times;</button>
-
-        <!-- Acuity Iframe -->
-        <div class="flex-1 overflow-auto rounded-b-xl">
-            <iframe 
-                src="https://app.acuityscheduling.com/schedule/c737c7b6" 
-                class="w-full h-full min-h-[500px]" 
-                frameborder="0">
-            </iframe>
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden z-50 overflow-auto">
+        <div class="modal-wrapper bg-white rounded-xl w-11/12 max-w-4xl h-[90vh] relative mx-auto my-10 flex flex-col">
+            <button onclick="closeBookingModal()" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold z-50">&times;</button>
+            <div class="flex-1 overflow-auto rounded-b-xl">
+                <iframe src="https://app.acuityscheduling.com/schedule/c737c7b6" class="w-full h-full min-h-[500px]" frameborder="0"></iframe>
+            </div>
         </div>
     </div>
-</div>
 
-    <!-- Scripts -->
     <script>
         lucide.createIcons();
-
-        function openBookingModal() {
-        const modal = document.getElementById('bookingModal');
-        modal.classList.remove('hidden');
-
-        // Allow animation frame to render before adding animation
-        requestAnimationFrame(() => modal.classList.add('modal-open'));
-    }
-
-    function closeBookingModal() {
-        const modal = document.getElementById('bookingModal');
-        modal.classList.remove('modal-open');
-
-        // Delay hiding until animation finishes
-        setTimeout(() => modal.classList.add('hidden'), 300);
-    }
+        function openBookingModal(){
+            const modal = document.getElementById('bookingModal');
+            modal.classList.remove('hidden');
+            requestAnimationFrame(()=>modal.classList.add('modal-open'));
+        }
+        function closeBookingModal(){
+            const modal = document.getElementById('bookingModal');
+            modal.classList.remove('modal-open');
+            setTimeout(()=>modal.classList.add('hidden'),300);
+        }
     </script>
+
 </body>
 </html>
