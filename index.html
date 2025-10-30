@@ -286,12 +286,20 @@
         lucide.createIcons();
 
         function openBookingModal() {
-            document.getElementById('bookingModal').classList.remove('hidden');
-        }
+        const modal = document.getElementById('bookingModal');
+        modal.classList.remove('hidden');
 
-        function closeBookingModal() {
-            document.getElementById('bookingModal').classList.add('hidden');
-        }
+        // Allow animation frame to render before adding animation
+        requestAnimationFrame(() => modal.classList.add('modal-open'));
+    }
+
+    function closeBookingModal() {
+        const modal = document.getElementById('bookingModal');
+        modal.classList.remove('modal-open');
+
+        // Delay hiding until animation finishes
+        setTimeout(() => modal.classList.add('hidden'), 300);
+    }
     </script>
 </body>
 </html>
