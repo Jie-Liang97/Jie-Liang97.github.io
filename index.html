@@ -253,15 +253,24 @@
         </div>
     </footer>
 
-    <!-- Booking Modal -->
-    <div id="bookingModal" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden z-50 modal-fade">
-        <div class="bg-white rounded-xl w-11/12 md:w-3/4 lg:w-2/3 h-4/5 relative">
-            <!-- Close Button -->
-            <button onclick="closeBookingModal()" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold">&times;</button>
-            <!-- Acuity Iframe -->
-            <iframe src="https://app.acuityscheduling.com/schedule/c737c7b6" class="w-full h-full rounded-xl" frameborder="0"></iframe>
+<!-- Booking Modal -->
+<div id="bookingModal" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden z-50 overflow-auto">
+    <div class="modal-wrapper bg-white rounded-xl w-11/12 max-w-4xl h-[90vh] relative mx-auto my-10 flex flex-col">
+        
+        <!-- Close Button -->
+        <button onclick="closeBookingModal()" 
+        class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold z-50">&times;</button>
+
+        <!-- Acuity Iframe -->
+        <div class="flex-1 overflow-auto rounded-b-xl">
+            <iframe 
+                src="https://app.acuityscheduling.com/schedule/c737c7b6" 
+                class="w-full h-full min-h-[500px]" 
+                frameborder="0">
+            </iframe>
         </div>
     </div>
+</div>
 
     <!-- Scripts -->
     <script>
