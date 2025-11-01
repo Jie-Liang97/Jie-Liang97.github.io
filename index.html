@@ -69,23 +69,25 @@
 </head>
 <body class="bg-white text-brand-dark">
 
-    <!-- Header / Navigation -->
-    <header class="bg-white sticky top-0 z-50 shadow-sm">
-        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-           <!-- Header Logo -->
-            <a href="#" class="flex items-center">
-            <img src="assets/images/Brand2.png" alt="Dr Jie Tutoring Brand" class="h-16">
-            </a>
+        <!-- Header / Navigation -->
+        <header class="bg-white shadow-sm"> <!-- Removed sticky top-0 z-50 -->
+            <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+                <!-- Logo -->
+                <a href="#" class="flex items-center">
+                    <img src="assets/images/Brand2.png" 
+                        alt="Dr Jie Tutoring Brand" 
+                        class="h-10 md:h-16">
+                </a>
 
-            <!-- Navigation Links -->
-            <ul class="hidden md:flex items-center space-x-8 font-medium">
-                <li><a href="#" class="text-brand-orange">Home</a></li>
-                <li><a href="#services" class="hover:text-brand-orange transition-colors">Service</a></li>
-                <li><a href="#features" class="hover:text-brand-orange transition-colors">How Online Tutoring Works</a></li>
-                <li><a href="#" class="hover:text-brand-orange transition-colors">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+                <!-- Navigation Links -->
+                <ul class="hidden md:flex items-center space-x-8 font-medium">
+                    <li><a href="#" class="text-brand-orange">Home</a></li>
+                    <li><a href="#services" class="hover:text-brand-orange transition-colors">Service</a></li>
+                    <li><a href="#features" class="hover:text-brand-orange transition-colors">How Online Tutoring Works</a></li>
+                    <li><a href="#contact" class="hover:text-brand-orange transition-colors">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
     <!-- Main Content -->
     <main>
@@ -276,24 +278,32 @@
 
         <!-- Brand Image in the bottom-right corner of this section -->
         <img src="assets/images/Brand2.png" 
-            alt="Dr Jie Tutoring Brand" 
-            class="absolute bottom-4 right-4 h-16">
+             alt="Dr Jie Tutoring Brand" 
+             class="absolute bottom-4 right-4 h-8 md:h-12">
     </section>
 
 
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-brand-dark text-gray-300 pb-8">
-        <div class="container mx-auto px-6 ">
-            <div class="pt-6 border-gray-700 flex flex-col sm:flex-row justify-between items-center text-sm">
-                <p class="text-gray-500 mb-4 sm:mb-0">&copy; 2025 Jie Liang. All rights reserved.</p>
-                <div class="flex space-x-5">
-                    <a href="https://researchers.adelaide.edu.au/profile/jie.liang02" class="text-gray-500 hover:text-brand-orange"><i data-lucide="university"></i></a>
+        <!-- Footer -->
+        <footer id="contact" class="bg-brand-dark text-gray-300 pb-8">
+            <div class="container mx-auto px-6">
+                <div class="pt-6 border-t border-gray-700 flex flex-col sm:flex-row justify-between items-center text-sm">
+                    <!-- Left side: copyright and email -->
+                    <div class="text-gray-500 mb-4 sm:mb-0">
+                        &copy; 2025 Jie Liang. All rights reserved. <br>
+                        Email: <a href="mailto:jacksonliang1997@gmail.com" class="text-brand-orange hover:underline">jacksonliang1997@gmail.com</a>
+                    </div>
+
+                    <!-- Right side: icons -->
+                    <div class="flex space-x-5">
+                        <a href="https://researchers.adelaide.edu.au/profile/jie.liang02" class="text-gray-500 hover:text-brand-orange">
+                            <i data-lucide="university"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
 
 <!-- Booking Modal -->
 <div id="bookingModal" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden z-50 overflow-auto">
