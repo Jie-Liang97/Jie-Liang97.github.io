@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<!-- Sitemap for Dr Jie Tutoring website -->
+
+<url>
+  <loc>https://jie-liang.cc/</loc>
+  <lastmod>2025-11-04T09:00:00+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://jie-liang.cc/services</loc>
+  <lastmod>2025-11-04T09:00:00+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://jie-liang.cc/how-it-works</loc>
+  <lastmod>2025-11-04T09:00:00+00:00</lastmod>
+</url>
+
+<url>
+  <loc>https://jie-liang.cc/contact</loc>
+  <lastmod>2025-11-04T09:00:00+00:00</lastmod>
+</url>
+
+</urlset>
