@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /assets/js/
+Disallow: /assets/css/
+Disallow: /assets/favicons/
+Disallow: /bookingModal/
+
+Allow: /
+
+Sitemap: https://jie-liang.cc/sitemap.xml
