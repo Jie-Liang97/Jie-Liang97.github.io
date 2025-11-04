@@ -3,54 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr Jie Tutoring - Online Tutoring Services</title>
 
-    <!-- Standard Favicon -->
+    <title>Online Maths Tutoring | Dr Jie Tutoring</title>
+    <meta name="description" content="Private online tutoring in Maths and Science for Year 10–12 students. Flexible 1-hour or weekly lessons with Dr Jie, PhD in Applied Mathematics. Book online now!">
+    <meta name="keywords" content="Online Tutoring, Maths Tutor, Year 10, Year 11, Year 12, HSC, Dr Jie, Online Learning, Private Tutor, Australia">
+
+    <!-- Open Graph / Social sharing -->
+    <meta property="og:title" content="Online Maths Tutoring | Dr Jie Tutoring">
+    <meta property="og:description" content="Private online tutoring in Maths for Year 10–12 students. Flexible 1-hour or weekly lessons with Dr Jie, PhD in Applied Mathematics.">
+    <meta property="og:image" content="https://jie-liang.cc/assets/images/T2.jpg">
+    <meta property="og:url" content="https://jie-liang.cc/">
+    <meta property="og:type" content="website">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
-
-    <!-- Apple Touch Icon (iOS Home Screen) -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
-
-    <!-- Android/Chrome -->
     <link rel="manifest" href="assets/favicons/site.webmanifest">
-
-    <!-- Fallback for Older Browsers -->
-    <link rel="shortcut icon" href="assets/favicons/favicon.ico">
-
-    <!-- Windows Tile (for Windows 8/10) -->
     <meta name="msapplication-TileColor" content="#FF7A5A">
-
-    <!-- Theme Color for Mobile Browsers -->
     <meta name="theme-color" content="#FF7A5A">
 
-    <!-- Tailwind CSS CDN -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- Google Font: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-
-        /* Modal fade-in animation */
-        .modal-fade {
-            transition: opacity 0.3s ease;
-        }
-        .modal-wrapper {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.35s ease;
-        }
-        .modal-open .modal-wrapper {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        body { font-family: 'Inter', sans-serif; }
+        .modal-fade { transition: opacity 0.3s ease; }
+        .modal-wrapper { opacity:0; transform:translateY(30px); transition:all 0.35s ease; }
+        .modal-open .modal-wrapper { opacity:1; transform:translateY(0); }
     </style>
 
     <script>
@@ -66,182 +54,131 @@
             },
         };
     </script>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Dr Jie Tutoring",
+      "url": "https://jie-liang.cc",
+      "logo": "https://jie-liang.cc/assets/images/Brand2.png",
+      "sameAs": ["https://researchers.adelaide.edu.au/profile/jie.liang02"],
+      "description": "Online Maths tutoring for Year 10–12 students. Flexible lessons with Dr Jie, PhD in Applied Mathematics.",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "jacksonliang1997@gmail.com",
+        "contactType": "customer support"
+      }
+    }
+    </script>
 </head>
+
 <body class="bg-white text-brand-dark">
-
-        <!-- Header / Navigation -->
-        <header class="bg-white shadow-sm"> <!-- Removed sticky top-0 z-50 -->
-            <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-                <!-- Logo -->
-                <a href="#" class="flex items-center">
-                    <img src="assets/images/Brand2.png" 
-                        alt="Dr Jie Tutoring Brand" 
-                        class="h-10 md:h-16">
-                </a>
-
-                <!-- Navigation Links -->
-                <ul class="hidden md:flex items-center space-x-8 font-medium">
-                    <li><a href="#" class="text-brand-orange">Home</a></li>
-                    <li><a href="#services" class="hover:text-brand-orange transition-colors">Service</a></li>
-                    <li><a href="#features" class="hover:text-brand-orange transition-colors">How Online Tutoring Works</a></li>
-                    <li><a href="#contact" class="hover:text-brand-orange transition-colors">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
+    <!-- Header / Navigation -->
+    <header class="bg-white shadow-sm">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <img src="assets/images/Brand2.png" alt="Dr Jie Tutoring Brand" class="h-10 md:h-16">
+            </a>
+            <ul class="hidden md:flex items-center space-x-8 font-medium">
+                <li><a href="#" class="text-brand-orange">Home</a></li>
+                <li><a href="#services" class="hover:text-brand-orange transition-colors">Services</a></li>
+                <li><a href="#features" class="hover:text-brand-orange transition-colors">How It Works</a></li>
+                <li><a href="#contact" class="hover:text-brand-orange transition-colors">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Main Content -->
     <main>
-
         <!-- Hero Section -->
         <section class="bg-[#FFF2E8]">
             <div class="max-w-7xl mx-auto px-6 lg:flex lg:items-center lg:justify-between py-20">
-                <!-- Text content -->
                 <div class="lg:w-1/2">
-                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Online Tutoring</h1>
-                    
-                    <!-- About Me -->
-                    <p class="text-gray-600 mb-6">
-                        <span class="font-bold">About Me:</span> I'm Dr. Jie, a PhD in Applied Mathematics with over 10 years of experience tutoring maths across all Australian states, helping students build confidence and excel in their studies.
-                    </p>
-                    
-                    <!-- Proverb -->
-                    <p class="text-gray-700 mb-6">
-                        Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime — 
-                        <span class="italic">as the Chinese proverb says: ‘授人以渔’</span>.
-                    </p>
-                    
-                    <!-- Call to Action -->
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Online Maths Tutoring</h1>
+                    <p class="text-gray-600 mb-6"><strong>About Me:</strong> I'm Dr. Jie, PhD in Applied Mathematics, with 10+ years tutoring experience helping Australian students excel in Mathematics.</p>
+                    <p class="text-gray-700 mb-6">Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime — <span class="italic">‘授人以渔’</span>.</p>
                     <div class="flex gap-6 mt-6">
-                     <a href="https://drjietutoring.setmore.com/" target="_blank"
-                       class="bg-[#635BFF] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#5243E6] transition shadow">
-                         Book Now 
-                         </a>
-                       <a href="https://buy.stripe.com/4gM28s0zy0n12GrbE7bsc02" target="_blank"
-                          class="bg-[#FF8C4B] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#E57639] transition shadow text-center">
-                         Subscribe
-                        </a>
+                        <a href="https://drjietutoring.setmore.com/" target="_blank" class="bg-[#635BFF] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#5243E6] transition shadow">Book Now</a>
+                        <a href="https://buy.stripe.com/4gM28s0zy0n12GrbE7bsc02" target="_blank" class="bg-[#FF8C4B] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#E57639] transition shadow text-center">Subscribe</a>
                     </div>
-                </div> <!-- Close left column properly -->
-
-                <!-- Image centered vertically on right half with slight right offset -->
+                </div>
                 <div class="lg:w-1/2 flex items-center justify-center mt-10 lg:mt-0 lg:pl-10">
-                    <img src="assets/images/T2.jpg" alt="Girl learning online" class="rounded-xl shadow-lg">
+                    <img src="assets/images/T2.jpg" alt="Online Maths Tutoring with Dr Jie" class="rounded-xl shadow-lg">
                 </div>
             </div>
         </section>
 
-
-
-
-        <!-- Services Section --> 
+        <!-- Services Section -->
         <section id="services" class="py-24">
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="md:w-1/2 md:mt-20">
-                        <img 
-                            src="assets/images/T1.jpg" 
-                            alt="A student smiling and holding a tablet" 
-                            class="rounded-2xl w-full md:w-0.85"
-                            onerror="this.src='https://placehold.co/550x500/E8F0F7/333?text=Image+Not+Found'">
+                    <div class="md:w-1/2 md:mt-20">
+                        <img src="assets/images/T1.jpg" alt="Student learning online tablet with Dr Jie" class="rounded-2xl w-full md:w-0.85">
                     </div>
-
-                <div class="md:w-1/2 relative">
-                    <div class="max-w-7xl mx-auto px-6 text-center">
-                        <h2 class="text-3xl font-bold mb-16">Service</h2>
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-                            <!-- Year 10 Maths Card -->
-                            <div class="bg-[#FFF2E8] p-6 rounded-xl text-center">
-                                <h3 class="font-bold text-3xl mb-4">Year 10</h3>
-                                <div class="flex justify-center mb-4">
-                                    <i data-lucide="book-open" class="w-12 h-12 text-brand-orange"></i>
+                    <div class="md:w-1/2 relative">
+                        <div class="max-w-7xl mx-auto px-6 text-center">
+                            <h2 class="text-3xl font-bold mb-16">Services</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+                                <div class="bg-[#FFF2E8] p-6 rounded-xl text-center">
+                                    <h3 class="font-bold text-3xl mb-4">Year 10</h3>
+                                    <div class="flex justify-center mb-4"><i data-lucide="book-open" class="w-12 h-12 text-brand-orange"></i></div>
+                                    <p>Support for Year 10 students to strengthen understanding of key concepts and build study confidence.</p>
                                 </div>
-                                <p>Support for Year 10 students to strengthen understanding of key concepts and build study confidence.</p>
-                            </div>
-
-                            <!-- Year 11 Maths Card -->
-                            <div class="bg-[#E8E8FF] p-6 rounded-xl text-center">
-                                <h3 class="font-bold text-3xl mb-4">Year 11</h3>
-                                <div class="flex justify-center mb-4">
-                                    <i data-lucide="clipboard-list" class="w-12 h-12 text-brand-orange"></i>
+                                <div class="bg-[#E8E8FF] p-6 rounded-xl text-center">
+                                    <h3 class="font-bold text-3xl mb-4">Year 11</h3>
+                                    <div class="flex justify-center mb-4"><i data-lucide="clipboard-list" class="w-12 h-12 text-brand-orange"></i></div>
+                                    <p>Guidance for Year 11 students to deepen understanding and tackle more challenging topics effectively.</p>
                                 </div>
-                                <p>Guidance for Year 11 students to deepen understanding and tackle more challenging topics effectively.</p>
-                            </div>
-
-                            <!-- Year 12 Maths Card -->
-                            <div class="bg-[#E8E8FF] p-6 rounded-xl text-center">
-                                <h3 class="font-bold text-3xl mb-4">Year 12</h3>
-                                <div class="flex justify-center mb-4">
-                                    <i data-lucide="file-check" class="w-12 h-12 text-purple-600"></i>
+                                <div class="bg-[#E8E8FF] p-6 rounded-xl text-center">
+                                    <h3 class="font-bold text-3xl mb-4">Year 12</h3>
+                                    <div class="flex justify-center mb-4"><i data-lucide="file-check" class="w-12 h-12 text-purple-600"></i></div>
+                                    <p>Comprehensive support for Year 12 students to consolidate knowledge and tackle advanced topics confidently.</p>
                                 </div>
-                                <p>Comprehensive support for Year 12 students to consolidate knowledge and tackle advanced topics confidently.</p>
-                            </div>
-
-                            <!-- Exam Card -->
-                            <div class="bg-[#FFE8E5] p-6 rounded-xl text-center">
-                                <h3 class="font-bold text-3xl mb-4">Exam Preparation</h3>
-                                <div class="flex justify-center mb-4">
-                                    <i data-lucide="book-plus" class="w-12 h-12 text-purple-600"></i>
+                                <div class="bg-[#FFE8E5] p-6 rounded-xl text-center">
+                                    <h3 class="font-bold text-3xl mb-4">Exam Preparation</h3>
+                                    <div class="flex justify-center mb-4"><i data-lucide="book-plus" class="w-12 h-12 text-purple-600"></i></div>
+                                    <p>Boost confidence with structured revision, practice, and proven test-taking techniques.</p>
                                 </div>
-                                <p>Boost confidence with structured revision, practice, and proven test-taking techniques.</p>
                             </div>
                         </div>
                     </div>
                 </div>
         </section>
 
-
-            <!-- Features Section -->
+        <!-- Features Section -->
         <section id="features" class="bg-gray-50 py-24">
             <div class="container mx-auto px-6">
                 <div class="flex flex-col md:flex-row items-center gap-12">
-                    
-                    <!-- Left Side: Steps -->
                     <div class="md:w-1/2">
                         <h2 class="text-3xl font-bold mb-6">How Online Tutoring Works</h2>
-                        <ul class="space-y-5 mb-8">                         
-                    <!-- Step 1 -->
-                        <li class="flex items-start gap-3">
-                            <div class="bg-green-100 p-1.5 rounded-full mt-1">
-                                <div class="text-green-600 w-5 h-5 rounded-full flex justify-center items-center">1</div>
-                            </div>
-                            <div class="flex flex-col">
-                                <span class="text-lg font-medium">Choose Your Service & Schedule a Lesson</span>                               
-                                <div class="mt-2 flex flex-wrap gap-3">
-                                    <!-- Book Now Button -->
-                                    <a href="https://drjietutoring.setmore.com/" target="_blank"
-                                        class="bg-[#635BFF] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#5243E6] transition shadow text-center">
-                                        Book Now
-                                    </a>
-                                    <a href="https://buy.stripe.com/4gM28s0zy0n12GrbE7bsc02" target="_blank"
-                                    class="bg-[#FF8C4B] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#E57639] transition shadow text-center">
-                                    Subscribe
-                                    </a>
-
-                                    <!-- Description for session types -->
-                                    <div class="bg-gray-100 p-3 rounded-md">
-                                        <p class="text-gray-700 text-sm">
-                                            <strong>1-Hour Session:</strong> Perfect for new students or those who want flexible scheduling.
-                                        </p>
-                                        <p class="text-gray-700 text-sm mt-1">
-                                            <strong>Weekly Session:</strong> Ideal for students who want to maintain consistent learning.
-                                        </p>
+                        <ul class="space-y-5 mb-8">
+                            <li class="flex items-start gap-3">
+                                <div class="bg-green-100 p-1.5 rounded-full mt-1">
+                                    <div class="text-green-600 w-5 h-5 rounded-full flex justify-center items-center">1</div>
+                                </div>
+                                <div class="flex flex-col">
+                                    <span class="text-lg font-medium">Choose Your Service & Schedule a Lesson</span>
+                                    <div class="mt-2 flex flex-wrap gap-3">
+                                        <a href="https://drjietutoring.setmore.com/" target="_blank" class="bg-[#635BFF] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#5243E6] transition shadow text-center">Book Now</a>
+                                        <a href="https://buy.stripe.com/4gM28s0zy0n12GrbE7bsc02" target="_blank" class="bg-[#FF8C4B] text-white px-6 py-2 rounded-lg font-semibold hover:bg-[#E57639] transition shadow text-center">Subscribe</a>
+                                        <div class="bg-gray-100 p-3 rounded-md">
+                                            <p class="text-gray-700 text-sm"><strong>1-Hour Session:</strong> Perfect for new students or those who want flexible scheduling.</p>
+                                            <p class="text-gray-700 text-sm mt-1"><strong>Weekly Session:</strong> Ideal for students who want to maintain consistent learning.</p>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </li>
-
-                        <!-- Step 2 -->
+                            </li>
                             <li class="flex items-start gap-3">
                                 <div class="bg-green-100 p-1.5 rounded-full mt-1">
                                     <div class="text-green-600 w-5 h-5 rounded-full flex justify-center items-center">2</div>
                                 </div>
                                 <div class="flex-1">
-                                <span class="text-lg font-medium">Install Zoom & get ready</span>
-                                <p class="text-gray-600 text-sm mb-2">A Zoom link will be provided on the booking confirmation page.</p>
+                                    <span class="text-lg font-medium">Install Zoom & get ready</span>
+                                    <p class="text-gray-600 text-sm mb-2">A Zoom link will be provided on the booking confirmation page.</p>
                                 </div>
                             </li>
-
-                        <!-- Step 3 -->
                             <li class="flex items-start gap-3">
                                 <div class="bg-green-100 p-1.5 rounded-full mt-1">
                                     <div class="text-green-600 w-5 h-5 rounded-full flex justify-center items-center">3</div>
@@ -249,112 +186,81 @@
                                 <span class="text-lg font-medium">Attend your lesson & start learning</span>
                             </li>
                         </ul>
-
-                       <!-- Payment Notice -->
                         <div class="bg-yellow-100 border-l-4 border-yellow-400 text-yellow-700 p-4 mb-4 rounded mt-4">
-                            Please note: All booking cancellations must be made at least 24 hours in advance. Late cancellations are non-refundable. 
+                            Please note: All booking cancellations must be made at least 24 hours in advance. Late cancellations are non-refundable.
                         </div>
                     </div>
-
-                    <!-- Right Side: Image -->
                     <div class="md:w-1/2 relative">
-                        <img 
-                            src="assets/images/T3.jpg" 
-                            alt="A student smiling and holding a tablet" 
-                            class="rounded-2xl w-full shadow-lg"
-                            onerror="this.src='https://placehold.co/550x500/E8F0F7/333?text=Image+Not+Found'">
+                        <img src="assets/images/T3.jpg" alt="Student smiling during online tutoring session" class="rounded-2xl w-full shadow-lg">
                     </div>
                 </div>
             </div>
         </section>
 
-
-
         <!-- Testimonial Section -->
         <section class="container mx-auto px-6 py-24 relative">
-        <h2 class="text-3xl font-bold mb-6">Review</h2>
-        <blockquote class="text-xl lg:text-2xl text-gray-700 italic leading-relaxed mb-6">
-            "Jie has been a fantastic help to my son, who is doing Ext 2 maths for the HSC this year. Jie has helped immensely by explaining concepts clearly and identifying content areas that need more coverage. Thank you, Jie, for boosting my son's confidence for the challenges of HSC exams"
-        </blockquote>
-        <div>
-            <div class="font-bold text-lg">Simone B.</div>
-            <div class="text-gray-600">Student</div>
-        </div>
-        <div class="flex text-yellow-400">
-            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-            <i data-lucide="star" class="w-5 h-5 fill-current"></i>
-        </div>
-
-        <!-- Brand Image in the bottom-right corner of this section -->
-        <img src="assets/images/Brand2.png" 
-             alt="Dr Jie Tutoring Brand" 
-             class="absolute bottom-4 right-4 h-8 md:h-12">
-    </section>
-
+            <h2 class="text-3xl font-bold mb-6">Review</h2>
+            <blockquote class="text-xl lg:text-2xl text-gray-700 italic leading-relaxed mb-6">
+                "Jie has been a fantastic help to my son, who is doing Ext 2 maths for the HSC this year. Jie has helped immensely by explaining concepts clearly and identifying content areas that need more coverage. Thank you, Jie, for boosting my son's confidence for the challenges of HSC exams."
+            </blockquote>
+            <div>
+                <div class="font-bold text-lg">Simone B.</div>
+                <div class="text-gray-600">Student</div>
+            </div>
+            <div class="flex text-yellow-400">
+                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+                <i data-lucide="star" class="w-5 h-5 fill-current"></i>
+            </div>
+            <img src="assets/images/Brand2.png" alt="Dr Jie Tutoring Brand" class="absolute bottom-4 right-4 h-8 md:h-12">
+        </section>
 
     </main>
 
-        <!-- Footer -->
-        <footer id="contact" class="bg-brand-dark text-gray-300 pb-8">
-            <div class="container mx-auto px-6">
-                <div class="pt-6 border-t border-gray-700 flex flex-col sm:flex-row justify-between items-center text-sm">
-                    <!-- Left side: copyright and email -->
-                    <div class="text-gray-500 mb-4 sm:mb-0">
-                        &copy; 2025 Jie Liang. All rights reserved. <br>
-                        Email: <a href="mailto:jacksonliang1997@gmail.com" class="text-brand-orange hover:underline">jacksonliang1997@gmail.com</a>
-                    </div>
-
-                    <!-- Right side: icons -->
-                    <div class="flex space-x-5">
-                        <a href="https://researchers.adelaide.edu.au/profile/jie.liang02" class="text-gray-500 hover:text-brand-orange">
-                            <i data-lucide="university"></i>
-                        </a>
-                    </div>
+    <!-- Footer -->
+    <footer id="contact" class="bg-brand-dark text-gray-300 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="pt-6 border-t border-gray-700 flex flex-col sm:flex-row justify-between items-center text-sm">
+                <div class="text-gray-500 mb-4 sm:mb-0">
+                    &copy; 2025 Jie Liang. All rights reserved. <br>
+                    Email: <a href="mailto:jacksonliang1997@gmail.com" class="text-brand-orange hover:underline">jacksonliang1997@gmail.com</a>
+                </div>
+                <div class="flex space-x-5">
+                    <a href="https://researchers.adelaide.edu.au/profile/jie.liang02" class="text-gray-500 hover:text-brand-orange">
+                        <i data-lucide="university"></i>
+                    </a>
                 </div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
-<!-- Booking Modal -->
-<div id="bookingModal" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden z-50 overflow-auto">
-    <div class="modal-wrapper bg-white rounded-xl w-11/12 max-w-4xl h-[90vh] relative mx-auto my-10 flex flex-col">
-        
-        <!-- Close Button -->
-        <button onclick="closeBookingModal()" 
-        class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold z-50">&times;</button>
-
-        <!-- Acuity Iframe -->
-        <div class="flex-1 overflow-auto rounded-b-xl">
-            <iframe 
-                src="https://drjietutoring.setmore.com/" 
-                class="w-full h-full min-h-[500px]" 
-                frameborder="0">
-            </iframe>
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="fixed inset-0 bg-black/50 flex items-center justify-center hidden z-50 overflow-auto">
+        <div class="modal-wrapper bg-white rounded-xl w-11/12 max-w-4xl h-[90vh] relative mx-auto my-10 flex flex-col">
+            <button onclick="closeBookingModal()" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800 text-2xl font-bold z-50">&times;</button>
+            <div class="flex-1 overflow-auto rounded-b-xl">
+                <iframe src="https://drjietutoring.setmore.com/" class="w-full h-full min-h-[500px]" frameborder="0"></iframe>
+            </div>
         </div>
     </div>
-</div>
 
     <!-- Scripts -->
     <script>
         lucide.createIcons();
 
         function openBookingModal() {
-        const modal = document.getElementById('bookingModal');
-        modal.classList.remove('hidden');
+            const modal = document.getElementById('bookingModal');
+            modal.classList.remove('hidden');
+            requestAnimationFrame(() => modal.classList.add('modal-open'));
+        }
 
-        // Allow animation frame to render before adding animation
-        requestAnimationFrame(() => modal.classList.add('modal-open'));
-    }
-
-    function closeBookingModal() {
-        const modal = document.getElementById('bookingModal');
-        modal.classList.remove('modal-open');
-
-        // Delay hiding until animation finishes
-        setTimeout(() => modal.classList.add('hidden'), 300);
-    }
+        function closeBookingModal() {
+            const modal = document.getElementById('bookingModal');
+            modal.classList.remove('modal-open');
+            setTimeout(() => modal.classList.add('hidden'), 300);
+        }
     </script>
 </body>
 </html>
